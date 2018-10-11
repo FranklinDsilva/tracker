@@ -1,0 +1,190 @@
+<html>
+<head>
+<script src="firstpage.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>HOME</title>
+<style>
+body{ background-image:url("http://Wallpaper-House.com/data/out/8/wallpaper2you_266181.jpg");
+          background- position:middle right;
+          background-repeat: no-repeat;
+          background-size:cover;
+          background-color:blue;
+}
+footer {
+text-align: center;
+}
+</style>
+
+</head>
+<body>
+<div>
+<div class="col-sm-4" ><img src="../static/cisco-logo.jpg" alt="Image" class="img-circle" width="100" height="100">
+</div>
+<div class="col-sm-8"><h1><b>Leave Tracker </b></h1></div>
+</div>
+ <div class="col-sm-12"></div>
+ <div>
+ <div class="col-sm-12"></div>
+ </div>
+ <div class="col-sm-12"></div>
+ <div>
+ <div class="col-sm-12"></div>
+ </div>
+ <div class="col-sm-12"></div>
+ <div>
+ <div class="col-sm-12"></div>
+ </div>
+ <div class="col-sm-12"></div>
+ <div>
+ <div class="col-sm-8"></div>
+ </div>
+<div>
+<div class="container">
+<table >
+<form  name="loginform" method="post" action="" onsubmit="return loginValidation();">
+<tr><td>
+<label>Email ID</label>
+</td>
+<td>
+<label for="pwd">Password</label></td></tr>
+<tr><td>
+<input name="Email1" id="eid1" type="text" placeholder="Email Address"  required class="form-control" required></td>
+<td>
+<input name="password1"  type="password" class="form-control" id="password1" placeholder="Password" required>
+<td>
+<input type="submit" value="login" style="font-size:10pt;color:white;background-color:blue;border:4px solid blue;padding:5px"></td></tr>
+
+</form>
+</table>
+</div>
+
+
+
+
+                             <marquee><h2><i><font color="red">Kindly Register if not done!</font></i></h2></marquee>
+
+<div ><h2><b> &ensp; &ensp; &ensp;&ensp;&ensp;&ensp; Register</b></h2></div>
+<div><div class="col-sm-4">
+<div class="container">
+    <div class="col-sm-4 ">
+	<div class="row">
+<form name="regform" method="post" action="" onsubmit="return formValidation();" >
+						<div class="row">
+							<div class=" col-sm-6 form-group">
+								<label>First Name</label>
+								<input name="FirstName" type="text" placeholder="First Name" id="fname" class="form-control" required>
+							</div>
+							<div class=" col-sm-6 form-group">
+								<label>Last Name</label>
+								<input name="LastName" type="text" placeholder="Last Name" id="lname" class="form-control" required>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label >Gender:</label>
+							<input name="Gender" type="radio" required name="Gender" value="Male"/>Male
+							<input name="Gender" type="radio" required name="Gender" value="Female" />Female
+							</div>
+<div class="form-group">
+						<label>Wipro Email ID</label>
+						<input name="Email" id="eid" type="text" placeholder="Email Address"  required class="form-control" required>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-6 form-group">
+							<label for="pw">Password</label>
+							<input name="password" type="password" class="form-control" id="password" placeholder="Enter password" required>
+					  </div>
+</div>
+<div class="form-group">
+					 <div class="row">
+                                         <div class="col-sm-6 form-group">
+							<label for="pw1">Confirm Password</label>
+							<input name="confirm_password"  type="password" class="form-control" id="confirm_password" placeholder="Confirm password" required>
+					  </div>
+
+</div>
+</div>
+                                        <div class="row">
+					<div class=" col-sm-6 form-group">
+							<label>Location</label>
+
+ <div class="form-group">
+                                       <div> <select name="Country" class="form-control" placeholder="Please choose.."required>
+                                       <option value=" selected ="selected" hidden>Select from..</option>
+                                       <option value="IND">India</option>
+                                       <option value="SJ">San Jose</option>
+                                       </select>
+
+                                       </div>
+</div>
+</div>
+
+
+
+<div class="form group">
+
+					<div class=" col-sm-8 form-group">
+<div class="row">
+&ensp; &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="submit" value="Register" onclick="myfunction()" id="hello" style="font-size:10pt;color:white;background-color:blue;border:4px solid blue;padding:5px">
+</div>
+</div>
+</div>
+</form>
+
+
+<script type="text/javascript">
+
+
+
+function formValidation()
+{
+var c=document.getElementById("password").value;
+var d=document.getElementById("confirm_password").value;
+if(c!=d){
+alert("Oops!Passwords you entered do not match");
+return false;
+}
+return true;
+}
+function myfunction()
+{
+if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(regform.Email.value))
+{
+  return true;
+}
+else {
+
+    window.alert("Invalid Email address");
+    return false;
+  }
+}
+
+document.getElementById("fname").onkeyup=function() {name()};
+function name()
+{
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+}
+document.getElementById("lname").onkeyup=function() {lasname()};
+function lasname()
+{
+var y=document.getElementById("lname");
+y.value=y.value.toUpperCase();
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
