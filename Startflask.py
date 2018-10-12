@@ -14,12 +14,20 @@ app.config['MYSQL_DB']='sme_tracker'
 
 mysql = MySQL(app)
 
+@app.route("/")
+def front_page():
+    return render_template("Frontpage.html")
+
+
+@app.route("/Loginpage.html")
+def Login_page():
+    return render_template("Loginpage.html")
 
 
 
 
 
-@app.route("/", methods=['GET','POST'])
+@app.route("/firstpage.html", methods=['GET','POST'])
 def register_form():
     if request.method=='POST':
         userDetails = request.form
